@@ -9,7 +9,11 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:8080", 
+    origin: [
+  "http://localhost:8080",
+  "http://localhost:5173",
+  "https://main.d2i96looi2ec7n.amplifyapp.com"
+  ], 
     methods: ["GET", "POST", "PUT", "DELETE"], 
     credentials: true,
   })

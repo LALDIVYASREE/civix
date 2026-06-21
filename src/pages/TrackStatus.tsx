@@ -19,7 +19,7 @@ const TrackStatus = () => {
     try {
 
       const response = await fetch(
-        `http://localhost:5000/api/complaints/track/${complaintId}`
+        `http://13.201.69.69:5000/api/complaints/track/${complaintId}`
       );
 
       if (!response.ok) {
