@@ -38,7 +38,7 @@ const OfficerDashboard = () => {
       console.log("Fetching for:", email); // 🔥 DEBUG
 
       const res = await fetch(
-        `http://13.201.69.69:5000/api/officer/${email}`
+        `https://project-backend-i2n7.onrender.com/api/officer/${email}`
       );
 
       const data = await res.json();
@@ -65,7 +65,7 @@ const OfficerDashboard = () => {
   const handleStatusUpdate = async (id: string, status: string) => {
 
     await fetch(
-      `http://13.201.69.69:5000/api/officer/status/${id}`,
+      `https://project-backend-i2n7.onrender.com/api/officer/status/${id}`,
       {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
@@ -97,7 +97,7 @@ const OfficerDashboard = () => {
     try {
 
       const res = await fetch(
-        `http://13.201.69.69:5000/api/officer/forward/${id}`,
+        `https://project-backend-i2n7.onrender.com/api/officer/forward/${id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },

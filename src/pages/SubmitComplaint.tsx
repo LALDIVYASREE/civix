@@ -76,7 +76,7 @@ const SubmitComplaint = () => {
 
     try {
 
-      const response = await fetch("http://13.201.69.69:5000/api/complaints", {
+      const response = await fetch("https://project-backend-i2n7.onrender.com/api/complaints", {
 
         method: "POST",
 

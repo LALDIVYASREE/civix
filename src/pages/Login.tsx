@@ -14,7 +14,7 @@ import { useToast } from "@/hooks/use-toast";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const API_BASE_URL = "http://13.201.69.69:5000";
+const API_BASE_URL = "https://project-backend-i2n7.onrender.com";
 
 const Login = () => {
 
